@@ -29,6 +29,11 @@ mongo.connect(url, function(err,db) {
 // });
 
 //task 3 homework
+
+var name = prompt("What Restaurant would you like to change?");
+var location = prompt("What is the new address?");
+var zipcode = prompt("What is the new zip?");
+var yelpChoice = prompt("Does it have a yelp?");
 collection.update({
 	"name": name
 }, {
@@ -49,4 +54,4 @@ collection.update({
 // 		console.log(err);
 // 	}
 // 	console.log("You removed the restaurant");
-// });
+});
